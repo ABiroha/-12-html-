@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SubDiv: integration.py ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SubDiv
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">SuborDivproject</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">integration.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="integration_8py.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceintegration.html">    1</a></span>&#160;<span class="comment">## @class AddOrMult</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">#  @brief myaddもしくはmymultを計算する</span></div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classintegration_1_1_sub_or_div.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classintegration_1_1_sub_or_div.html">SubOrDiv</a>():</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classintegration_1_1_sub_or_div.html#aa90cbb85bbec98d8899a5537147fb7e2">    5</a></span>&#160;    <span class="keyword">def </span><a class="code" href="classintegration_1_1_sub_or_div.html#aa90cbb85bbec98d8899a5537147fb7e2">__init__</a>(self, sub_func, div_func):</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        super().<a class="code" href="classintegration_1_1_sub_or_div.html#aa90cbb85bbec98d8899a5537147fb7e2">__init__</a>()</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classintegration_1_1_sub_or_div.html#ab04693ea92f4bf07d2bae8f80358e319">    7</a></span>&#160;        self.<a class="code" href="classintegration_1_1_sub_or_div.html#ab04693ea92f4bf07d2bae8f80358e319">sub</a> = sub_func</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classintegration_1_1_sub_or_div.html#a1a64bd0cd86c9cabad995e65d8af23fd">    8</a></span>&#160;        self.<a class="code" href="classintegration_1_1_sub_or_div.html#a1a64bd0cd86c9cabad995e65d8af23fd">div</a> = div_func</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">## @fn do(self, a, b, c)</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    #  @brief aとbの和もしくは積を計算する</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    #  @param   a (int): 1つ目の引数</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    #  @param   b (int): 2つ目の引数</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    #  @param   c (str): &quot;add&quot;もしくは&quot;mult&quot;．&quot;add&quot;が指定されたらa+bを，&quot;mult&quot;が指定されたら&quot;a*b&quot;を返す</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    #  @return   int: a+bまたはa*b</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classintegration_1_1_sub_or_div.html#a5424927d3cdf2b0170f3013ab3fd235b">   16</a></span>&#160;    <span class="keyword">def </span><a class="code" href="classintegration_1_1_sub_or_div.html#a5424927d3cdf2b0170f3013ab3fd235b">do</a>(self, a, b, c):</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">if</span> c == <span class="stringliteral">&#39;sub&#39;</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> self.<a class="code" href="classintegration_1_1_sub_or_div.html#ab04693ea92f4bf07d2bae8f80358e319">sub</a>(a, b)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> c == <span class="stringliteral">&#39;div&#39;</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">return</span> self.<a class="code" href="classintegration_1_1_sub_or_div.html#a1a64bd0cd86c9cabad995e65d8af23fd">div</a>(a, b)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">None</span></div><div class="ttc" id="classintegration_1_1_sub_or_div_html_a1a64bd0cd86c9cabad995e65d8af23fd"><div class="ttname"><a href="classintegration_1_1_sub_or_div.html#a1a64bd0cd86c9cabad995e65d8af23fd">integration.SubOrDiv.div</a></div><div class="ttdeci">div</div><div class="ttdef"><b>Definition:</b> <a href="integration_8py_source.html#l00008">integration.py:8</a></div></div>
+<div class="ttc" id="classintegration_1_1_sub_or_div_html_ab04693ea92f4bf07d2bae8f80358e319"><div class="ttname"><a href="classintegration_1_1_sub_or_div.html#ab04693ea92f4bf07d2bae8f80358e319">integration.SubOrDiv.sub</a></div><div class="ttdeci">sub</div><div class="ttdef"><b>Definition:</b> <a href="integration_8py_source.html#l00007">integration.py:7</a></div></div>
+<div class="ttc" id="classintegration_1_1_sub_or_div_html_a5424927d3cdf2b0170f3013ab3fd235b"><div class="ttname"><a href="classintegration_1_1_sub_or_div.html#a5424927d3cdf2b0170f3013ab3fd235b">integration.SubOrDiv.do</a></div><div class="ttdeci">def do(self, a, b, c)</div><div class="ttdoc">aとbの和もしくは積を計算する </div><div class="ttdef"><b>Definition:</b> <a href="integration_8py_source.html#l00016">integration.py:16</a></div></div>
+<div class="ttc" id="classintegration_1_1_sub_or_div_html_aa90cbb85bbec98d8899a5537147fb7e2"><div class="ttname"><a href="classintegration_1_1_sub_or_div.html#aa90cbb85bbec98d8899a5537147fb7e2">integration.SubOrDiv.__init__</a></div><div class="ttdeci">def __init__(self, sub_func, div_func)</div><div class="ttdef"><b>Definition:</b> <a href="integration_8py_source.html#l00005">integration.py:5</a></div></div>
+<div class="ttc" id="classintegration_1_1_sub_or_div_html"><div class="ttname"><a href="classintegration_1_1_sub_or_div.html">integration.SubOrDiv</a></div><div class="ttdef"><b>Definition:</b> <a href="integration_8py_source.html#l00003">integration.py:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
